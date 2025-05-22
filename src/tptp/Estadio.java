@@ -20,5 +20,9 @@ public class Estadio extends Sede {
 		return precioBase;
 	}
 	
+	@Override
+	public Sector getSector(String nombre) {
+	    return null;
+	}
 
 }

@@ -8,6 +8,7 @@ public class Funcion {
 	private String fecha;
 	private double precioBase;
 	private List<IEntrada> entradas;
+	private String tipo;
 	
 	public Funcion(Sede sede, String fecha, double precioBase) {
 		super();
@@ -29,6 +30,24 @@ public class Funcion {
 	public List<IEntrada> getEntradas() {
 		return entradas;
 	}
+
+	public double calcularPrecio(String nombreSector) {
+		if(sede.esEstadio()) {
+			return precioBase;
+		}
+	    Sector sector = sede.getSector(nombreSector);
+	    if (sector == null) {
+	        throw new RuntimeException("Sector no encontrado: " + nombreSector);
+	    }
+
+	    return sector.calcularPrecio(precioBase);
+	}
+	
+	public boolean esEstadio() {
+	    return tipo.equalsIgnoreCase("ESTADIO");
+	}
+	
+	
 	
 	
 	

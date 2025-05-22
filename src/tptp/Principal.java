@@ -94,6 +94,7 @@ public class Principal {
                 "1234", 
                 10 
                 );
+
         System.out.println("\nEntradas Alcides para Coldplay:");
         for (IEntrada e: entradasAlcides)
         	System.out.println(" - " + e);

@@ -21,6 +21,7 @@ public class Usuario {
     }
 	
 	 public void agregarEntrada(IEntrada e) {
+		 //agrega entrada a la lista del usuario
 	        entradas.add(e);
 	    }
 	 
@@ -29,6 +30,7 @@ public class Usuario {
 	    }
 	 
 	 public List<IEntrada> getEntradas() {
+		 //devuelve lista de entradas del usuario
 	        return entradas;
 	    }
 

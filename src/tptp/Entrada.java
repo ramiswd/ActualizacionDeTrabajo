@@ -23,12 +23,15 @@ public class Entrada implements IEntrada {
 
 	@Override
 	public double precio() {
-		return this.precio;
+		return this.precio; 
 	}
 	
 	@Override
 	public String ubicacion() {
-		return this.ubicacion();
+	    if ("CAMPO".equals(sector)) {
+	        return sector;
+	    }
+	    return sector + " - Fila: " + fila + ", Asiento: " + asiento;
 	}
 	@Override
 	public String toString() {

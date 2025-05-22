@@ -10,9 +10,9 @@ abstract class Sede {
 		this.direccion=direccion;
 		this.capacidad=capacidad;
 	}
-	
+	//saber si una sede es un estadio o no
 	public abstract boolean esEstadio();
-	
+	//cada sede calcula el precio de forma diferente
 	public abstract double calcularPrecio(String sector, double precioBase);
 
 	public String getNombre() {
@@ -26,5 +26,6 @@ abstract class Sede {
 	public String getDireccion() {
 		return direccion;
 	}
-
+	//accede al sector especifico por nombre, sirve para teatro y miniEstadio
+	public abstract Sector getSector(String nombre);
 }
