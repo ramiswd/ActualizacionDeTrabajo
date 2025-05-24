@@ -31,17 +31,18 @@ public class Funcion {
 		return entradas;
 	}
 
-	public double calcularPrecio(String nombreSector) {
-		if(sede.esEstadio()) {
-			return precioBase;
-		}
-	    Sector sector = sede.getSector(nombreSector);
-	    if (sector == null) {
-	        throw new RuntimeException("Sector no encontrado: " + nombreSector);
-	    }
+	public double calcularPrecio(String sector) {
+        if (sede.esEstadio()) {
+            return precioBase;
+        }
 
-	    return sector.calcularPrecio(precioBase);
-	}
+        Sector sectorObj = sede.getSector(sector);
+        if (sectorObj == null) {
+            throw new RuntimeException("Sector no encontrado: " + sector);
+        }
+
+        return sectorObj.calcularPrecio(precioBase);
+    }
 	
 	public boolean esEstadio() {
 	    return tipo.equalsIgnoreCase("ESTADIO");

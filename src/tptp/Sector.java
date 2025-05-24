@@ -9,6 +9,7 @@ public class Sector {
     private int capacidad;
     private Set<Integer> vendidos;
     private int entradasVendidas;
+   
     
     
     
@@ -48,11 +49,13 @@ public class Sector {
         vendidos.add(asiento);
     }
 	
-	 public double calcularPrecio(double base) {
-		 //calcula el precio de la entrada segun el incremento del sector
-	        return base + base * incremento;
-	    }
-
+	public double calcularPrecio(double precioBase) {
+        return precioBase * (1 + incremento);
+    }
+	
+	public double getIncremento() {
+		return incremento;
+	}
 	public int getCapacidad() {
 		return capacidad;
 	}
@@ -60,9 +63,9 @@ public class Sector {
 	public String getNombre() {
 		return nombre;
 	}
-	 public int getEntradasVendidas() {
+	public int getEntradasVendidas() {
 	        return entradasVendidas;
-	    }
+	}
 	
 	
 

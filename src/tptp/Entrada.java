@@ -40,6 +40,19 @@ public class Entrada implements IEntrada {
 		}
         return  codigo + " - " + espectaculo + " - " + funcion.getFecha() + " - " + sector + " - " + "Fila: "+ fila +" Asiento: " + asiento;
     }
+
+
+	@Override
+	public Funcion getFuncion() {
+		
+		return funcion;
+	}
+
+
+	public String getNombreEspectaculo() {
+		
+		return espectaculo;
+	}
 	
 	
 

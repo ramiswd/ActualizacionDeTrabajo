@@ -34,4 +34,6 @@ public interface IEntrada {
 	 * @return
 	 */
 	String toString();
+
+	Funcion getFuncion();
 }

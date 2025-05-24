@@ -44,20 +44,20 @@ public class Principal {
 
 		// 3) y 14) Registrar espectaculos y sus funciones
         ticketek.registrarEspectaculo("El Rey León");        
-		ticketek.agregarFuncion("El Rey León", "26/07/2025", "Teatro Gran Rex", 90000.0);
+		ticketek.agregarFuncion("El Rey León", "26/07/25", "Teatro Gran Rex", 90000.0);
 		
-		ticketek.agregarFuncion("El Rey León", "29/07/2025", "Teatro Gran Rex", 90000.0);
-		ticketek.agregarFuncion("El Rey León", "31/08/2025", "Teatro Colón", 90000.0);
-		ticketek.agregarFuncion("El Rey León", "31/09/2025", "Teatro Colón", 90000.0);
-		ticketek.agregarFuncion("El Rey León", "01/10/2025", "Teatro Gran Rex", 90000.0);
+		ticketek.agregarFuncion("El Rey León", "29/07/25", "Teatro Gran Rex", 90000.0);
+		ticketek.agregarFuncion("El Rey León", "31/08/25", "Teatro Colón", 90000.0);
+		ticketek.agregarFuncion("El Rey León", "31/09/25", "Teatro Colón", 90000.0);
+		ticketek.agregarFuncion("El Rey León", "01/10/25", "Teatro Gran Rex", 90000.0);
 
         
         ticketek.registrarEspectaculo("Coldplay en vivo");
-        ticketek.agregarFuncion("Coldplay en vivo", "25/07/2025", "La bombonera", 130000.0);
-        ticketek.agregarFuncion("Coldplay en vivo", "28/07/2025", "La bombonera", 130000.0);
-        ticketek.agregarFuncion("Coldplay en vivo", "30/07/2025", "La bombonera", 130000.0);
-        ticketek.agregarFuncion("Coldplay en vivo", "31/07/2025", "La bombonera", 130000.0);
-        ticketek.agregarFuncion("Coldplay en vivo", "01/08/2025", "La bombonera", 130000.0);
+        ticketek.agregarFuncion("Coldplay en vivo", "25/07/25", "La bombonera", 130000.0);
+        ticketek.agregarFuncion("Coldplay en vivo", "28/07/25", "La bombonera", 130000.0);
+        ticketek.agregarFuncion("Coldplay en vivo", "30/07/25", "La bombonera", 130000.0);
+        ticketek.agregarFuncion("Coldplay en vivo", "31/07/25", "La bombonera", 130000.0);
+        ticketek.agregarFuncion("Coldplay en vivo", "01/08/25", "La bombonera", 130000.0);
 
 		printEmpresa(ticketek, "Sedes, Usuarios y Funciones registradas.");
 
@@ -68,7 +68,7 @@ public class Principal {
         int[] asientos = { 10, 9, 1, 2 };
         ticketek.venderEntrada(
             "El Rey León", 
-            "31/08/2025", 
+            "31/08/25", 
             "alcides@violeta.com", 
             "1234", 
             "Platea Común",
@@ -76,7 +76,7 @@ public class Principal {
         );
         List<IEntrada> entradasConejo = ticketek.venderEntrada(
 	        "El Rey León", 
-	        "29/07/2025", 
+	        "29/07/25", 
 	        "miguel.conejito@alejandro.com.ar", 
 	        "1234", 
 	        "Platea VIP",
@@ -89,7 +89,7 @@ public class Principal {
         // // Entradas para coldplay
         List<IEntrada> entradasAlcides = ticketek.venderEntrada(
                 "Coldplay en vivo", 
-                "31/07/2025", 
+                "31/07/25", 
                 "alcides@violeta.com", 
                 "1234", 
                 10 

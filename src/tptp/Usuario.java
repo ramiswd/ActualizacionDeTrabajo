@@ -46,6 +46,10 @@ public class Usuario {
 		return apellido;
 	}
 	
+	public void removerEntrada(IEntrada entrada) {
+	    entradas.remove(entrada);
+	}
+	
 	
 
 }

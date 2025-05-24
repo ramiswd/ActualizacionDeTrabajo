@@ -4,7 +4,6 @@ import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.*;
 
-import java.util.LinkedList;
 import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -66,6 +65,7 @@ public class TicketekTest{
         ticketek.venderEntrada("Stand up Comedy", "10/04/25", "javierm@campus.ungs.edu.ar", "1234", "VIP", new int[]{1, 2, 3, 4});
         ticketek.venderEntrada("Stand up Comedy", "10/04/25", "nores@campus.ungs.edu.ar", "1234", "VIP", new int[]{11, 12, 13, 14});
         ticketek.venderEntrada("Ballet Clásico", "01/03/25", "nores@campus.ungs.edu.ar", "1234", "Baja", new int[]{1, 2, 3, 4});
+    
     }
 
    
