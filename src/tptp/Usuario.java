@@ -7,6 +7,7 @@ public class Usuario {
 	
 	private String email,nombre,apellido,contrasenia;
 	private List<IEntrada> entradas;
+	
 	public Usuario(String email, String nombre, String apellido, String contrasenia) {
 		super();
 		this.email = email;

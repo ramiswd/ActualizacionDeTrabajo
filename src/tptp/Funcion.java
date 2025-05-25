@@ -32,16 +32,17 @@ public class Funcion {
 	}
 
 	public double calcularPrecio(String sector) {
+		//si es estadio, devuelve el precio base
         if (sede.esEstadio()) {
             return precioBase;
         }
-
-        Sector sectorObj = sede.getSector(sector);
-        if (sectorObj == null) {
+        //busca el nombre del sector y lo obtiene como objeto SECTOR
+        Sector sectorb = sede.getSector(sector);
+        if (sectorb == null) {
             throw new RuntimeException("Sector no encontrado: " + sector);
         }
-
-        return sectorObj.calcularPrecio(precioBase);
+        //devuelve el preciobase+ su incremento
+        return sectorb.calcularPrecio(precioBase);
     }
 	
 	public boolean esEstadio() {

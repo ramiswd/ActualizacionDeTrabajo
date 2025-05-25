@@ -25,7 +25,7 @@ public class Sector {
         if (entradasVendidas < capacidad) {
             entradasVendidas++;
         } else {
-        	//si lleva sobrepasa la capacidad, devuelve excepcion
+        	//si  sobrepasa la capacidad, devuelve excepcion
             throw new RuntimeException("No hay más entradas disponibles en este sector.");
         }
     }
@@ -45,7 +45,7 @@ public class Sector {
 		if (!disponible(asiento)) {
 		    throw new RuntimeException("El asiento ya está vendido.");
 		}
-		//marca el asiento vendido y lo agrega al conjunto
+		//marca el asiento vendido y lo agrega al conjunto SET
         vendidos.add(asiento);
     }
 	

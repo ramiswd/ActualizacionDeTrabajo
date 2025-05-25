@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Teatro extends Sede{
 	private int asientosPorFila;
-	Map<String,Sector> sectores;
+	private Map<String,Sector> sectores;
 	
 	
 	public Teatro(String nombre, String direccion, int capacidad,int asientoPorFila) {

@@ -8,6 +8,7 @@ public class Entrada implements IEntrada {
     private int fila;
     private int asiento;
     private double precio;
+    
 
 	public Entrada(String codigo, String espectaculo, Funcion funcion, String sector,int fila, int asiento, double precio) {
 		
@@ -35,6 +36,7 @@ public class Entrada implements IEntrada {
 	}
 	@Override
 	public String toString() {
+		
 		if ("CAMPO".equals(sector)) {
 			return   codigo + " - " + espectaculo + " - " + funcion.getFecha() + " - " + sector;
 		}
@@ -53,6 +55,8 @@ public class Entrada implements IEntrada {
 		
 		return espectaculo;
 	}
+	
+	
 	
 	
 
